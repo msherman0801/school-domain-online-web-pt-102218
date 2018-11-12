@@ -1,7 +1,7 @@
 class School
-  def initialize(school)
+  def initialize(school, roster={})
     @school = school
-    @roster = {}
+    @roster = roster
   end
 
   def roster
@@ -10,9 +10,8 @@ class School
   
   def sort
     @roster.sort.each do |k,v|
-      @roster[k] = v.sort
+       = v.sort
     end
-    @roster
   end
   
   def grade(grade)
